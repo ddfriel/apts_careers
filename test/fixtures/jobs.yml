@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  silkroad_job_id: 1
+  title: MyString
+  description: MyString
+  tracking_code: 1
+  apply_url: MyString
+  required_skills: MyString
+  required_experience: MyString
+  posting_date: 2013-09-09
+  job_location_country_code: MyString
+  job_location_region: MyString
+  job_location_municipality: MyString
+  category: MyString
+  business_unit: MyString
+  position_type: MyString
+
+two:
+  silkroad_job_id: 1
+  title: MyString
+  description: MyString
+  tracking_code: 1
+  apply_url: MyString
+  required_skills: MyString
+  required_experience: MyString
+  posting_date: 2013-09-09
+  job_location_country_code: MyString
+  job_location_region: MyString
+  job_location_municipality: MyString
+  category: MyString
+  business_unit: MyString
+  position_type: MyString

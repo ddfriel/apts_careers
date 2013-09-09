@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Silkroad job:</b>
+  <%= @job.silkroad_job_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @job.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @job.description %>
+</p>
+
+<p>
+  <b>Tracking code:</b>
+  <%= @job.tracking_code %>
+</p>
+
+<p>
+  <b>Apply url:</b>
+  <%= @job.apply_url %>
+</p>
+
+<p>
+  <b>Required skills:</b>
+  <%= @job.required_skills %>
+</p>
+
+<p>
+  <b>Required experience:</b>
+  <%= @job.required_experience %>
+</p>
+
+<p>
+  <b>Posting date:</b>
+  <%= @job.posting_date %>
+</p>
+
+<p>
+  <b>Job location country code:</b>
+  <%= @job.job_location_country_code %>
+</p>
+
+<p>
+  <b>Job location region:</b>
+  <%= @job.job_location_region %>
+</p>
+
+<p>
+  <b>Job location municipality:</b>
+  <%= @job.job_location_municipality %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @job.category %>
+</p>
+
+<p>
+  <b>Business unit:</b>
+  <%= @job.business_unit %>
+</p>
+
+<p>
+  <b>Position type:</b>
+  <%= @job.position_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

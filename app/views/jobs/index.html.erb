@@ -1,0 +1,49 @@
+<h1>Listing jobs</h1>
+
+<table>
+  <tr>
+    <th>Silkroad job</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Tracking code</th>
+    <th>Apply url</th>
+    <th>Required skills</th>
+    <th>Required experience</th>
+    <th>Posting date</th>
+    <th>Job location country code</th>
+    <th>Job location region</th>
+    <th>Job location municipality</th>
+    <th>Category</th>
+    <th>Business unit</th>
+    <th>Position type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jobs.each do |job| %>
+  <tr>
+    <td><%= job.silkroad_job_id %></td>
+    <td><%= job.title %></td>
+    <td><%= job.description %></td>
+    <td><%= job.tracking_code %></td>
+    <td><%= job.apply_url %></td>
+    <td><%= job.required_skills %></td>
+    <td><%= job.required_experience %></td>
+    <td><%= job.posting_date %></td>
+    <td><%= job.job_location_country_code %></td>
+    <td><%= job.job_location_region %></td>
+    <td><%= job.job_location_municipality %></td>
+    <td><%= job.category %></td>
+    <td><%= job.business_unit %></td>
+    <td><%= job.position_type %></td>
+    <td><%= link_to 'Show', job %></td>
+    <td><%= link_to 'Edit', edit_job_path(job) %></td>
+    <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Job', new_job_path %>
